@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Input;
 
 namespace IndkøbsApp.Common
 {
-    public class RelayCommand
+    public class RelayCommand:ICommand
     {
         
         public RelayCommand(Action execute) : this(execute, null)
